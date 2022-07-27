@@ -1,0 +1,83 @@
+.App {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+  padding: 200px;
+  /*  */
+  color: var(--text-primary);
+  background-color: var(--background);
+  font-size: large;
+  font-weight: bold;
+  padding: 20px;
+  height: calc(100vh - 40px);
+  transition: all .5s;
+}
+button {
+  color: var(--text-primary);
+  background-color: var(--background);
+  border: 2px var(--text-primary) solid;
+  float: right;
+  transition: all .5s;
+}
+:root {
+  --background: white;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+}
+[data-theme='dark'] {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+.search_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.search_form--label {
+  font-size: 40px;
+  font-weight: 800;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.search_form--input,
+:focus {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: #999999;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.search_form--input:focus {
+  outline: none;
+}
+
+.employee_list {
+  font-size: 20px;
+}
+
+.employee_list--item {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.employee_list--item-name {
+  font-weight: 600;
+  color: #797a79;
+}
+.employee_list--item-address {
+  color: #ff604b;
+}
+.employee_list--item-email {
+  color: #006699;
+}
