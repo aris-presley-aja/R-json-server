@@ -31,14 +31,18 @@ const App = () => {
 
     setEmployees(_employees);
   };
+// {
+// var employee = employees.map .caller.function('employee', 'index' )
+
+// }
 
   return (
     <div className="App">
       <div className="search_form">
-        <label className="search_form--label">Search employees</label>
+        <label className="search_form--label">Cari Pegawai</label>
         <input
           className="search_form--input"
-          type="text"
+          type="array"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
         ></input>
@@ -80,9 +84,11 @@ const App = () => {
                 {/* <div className="employee_list--item-email">{employee.email}</div> */}
               </div></>
           );
+              
         })}
       </div>
     </div>
+
   );
 };
 
